@@ -1,0 +1,573 @@
+:root
+{
+    --cor-principal: #49B3FF;
+    --cor-principal-escuro: #3989c2;
+    --cor-secundaria: #D83447;
+    --cor-secundaria-escuro: #a82937;
+    --cor-cinza: #868987;
+    --cor-branco: #FFF;
+    --cor-preto: #232626;
+}
+
+*
+{
+    font-family: Helvetica,Arial;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background-color: var(--cor-principal);
+}
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10%;
+    padding: 20px 10%;
+    background-color: var(--cor-preto);
+}
+
+main
+{
+    background-color: var(--cor-branco);
+    margin: 0 10%;
+    padding: 40px 0;
+}
+
+/* Navbar */
+
+header form #pesquisar
+{
+    width: 80%;
+    height: 40px;
+    border: solid 1px var(--cor-cinza);
+    border-radius: 20px;
+    padding: 0 20px;
+}
+header form #procurar
+{
+    cursor: pointer;
+    background: none;
+    border: var(--cor-cinza);
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+}
+
+header input[type="submit"]
+{
+    height: 40px;
+    border: solid 1px gray;
+    border-radius: 20px;
+}
+header nav .navbar_links
+{
+    list-style: none;
+}
+header nav .navbar_links li
+{
+    display: inline-block;
+    padding: 0px 20px;
+}
+header nav .navbar_links li a,
+header #login a
+{
+    text-decoration: none;
+    color: var(--cor-branco);
+}
+header nav .navbar_links li a:hover,
+header #login a:hover
+{
+    color: var(--cor-principal);
+}
+
+header #login
+{
+    color: var(--cor-branco);
+}
+
+header #login a
+{
+    color: var(--cor-branco);
+    text-decoration: none;
+}
+
+.color-menu
+{
+    color: var(--cor-branco);
+}
+
+/* Index */
+
+main .index_banner h1
+{
+    font-size: 2vw;
+    border: none;
+    border-radius: 50px 50px 0 0;
+    text-align: center;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-branco);
+    padding: 10px;
+}
+
+main .index_banner img
+{
+    width: 100%;
+    border: var(--cor-secundaria) solid 2px;
+}
+/* Sobre */
+
+main .sobre
+{
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    letter-spacing: 1px;
+}
+main .sobre h1
+{
+    font-weight: bolder;
+    color: var(--cor-branco);
+    background-color: var(--cor-principal);
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+main .sobre p
+{
+    color: var(--cor-preto);
+}
+
+/* Telas */
+
+main .tela_login #login,
+main .tela_registro-pessoa,
+main .tela_registro-produto
+{
+    margin-left: 10%;
+}
+
+main .tela_registro-pessoa form p,
+main .tela_registro-produto form p
+{
+    margin: 20px 0;
+}
+
+main .tela_login #login h2,
+main .tela_registro-pessoa form h2,
+main .tela_registro-produto form h2
+{
+    color: var(--cor-principal);
+}
+
+main .tela_login #login form p label,
+main .tela_registro-pessoa form p label,
+main .tela_registro-produto form p label
+{
+    font-weight: bolder;
+    color: var(--cor-principal);
+}
+
+main .tela_login #login form p input,
+main .tela_registro-pessoa form p input,
+main .tela_registro-produto form p input
+{
+    border: var(--cor-principal) solid 3px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+main .tela_login #login form p input[type="submit"],
+main .tela_registro-pessoa form p input[type="submit"],
+main .tela_registro-produto form p input[type="submit"]
+{
+    width: 20%;
+    margin: 20px 0;
+    padding: 10px;
+    font-weight: bolder;
+    color: var(--cor-branco);
+    border: none;
+    border-radius: 20px;
+    background-color: var(--cor-principal);
+}
+
+main .tela_registro-pessoa form p input[type="submit"]:hover,
+main .tela_registro-produto form p input[type="submit"]:hover,
+main .tela_login #login form p input[type="submit"]:hover
+{
+    cursor: pointer;
+    background-color: var(--cor-principal-escuro);
+}
+
+main .tela_registro-pessoa form p select
+{
+    text-align: center;
+    padding: 10px;
+    border: var(--cor-principal) solid 3px;
+    border-radius: 20px;
+    background-color: var(--cor-branco);
+}
+
+/* Tela de Login */
+
+main .tela_login #login form p input[type="submit"]
+{
+    width: 50%;
+}
+
+main .tela_login
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+main .tela_login #login p
+{
+    color: var(--cor-preto);
+    margin-bottom: 20px;
+}
+
+main .tela_login #registre p
+{
+    color: var(--cor-preto);
+}
+
+main .tela_login #registre a button
+{
+    width: 50%;
+    margin: 60px 0 20px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--cor-secundaria);
+}
+main .tela_login #registre a button:hover
+{
+    cursor: pointer;
+    background-color: var(--cor-secundaria-escuro);
+}
+main .tela_login #registre a button
+{
+    font-weight: bolder;
+    color: var(--cor-branco);
+    text-decoration: none;
+}
+main .tela_login #registre h2
+{
+    color: var(--cor-secundaria);
+    margin-bottom: 20px;
+}
+
+/* Produtos */
+
+main .produtos table
+{
+    width: 100%;
+    border: var(--cor-preto) solid thin;
+    border-radius: 25px;
+    border-collapse: collapse;
+}
+
+main .produtos table td a button
+{
+    color: var(--cor-branco);
+    background-color: var(--cor-secundaria);
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+main .produtos table td a button:hover
+{
+    cursor: pointer;
+    background-color: var(--cor-secundaria-escuro);
+}
+
+main .produtos h1
+{
+    width: 30%;
+    color: var(--cor-branco);
+    background-color: var(--cor-secundaria);
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+    margin: 10px auto;
+}
+
+main .produtos p
+{
+    text-align: center;
+}
+
+main .produtos table 
+{
+    width: 50%;
+    margin: 20px auto;
+    border-radius: 20px;
+}
+
+main .produtos table td
+{
+    text-align: center;
+    padding: 20px;
+}
+
+
+main .produtos table td[colspan="4"]
+{
+    color: var(--cor-branco);
+    background-color: var(--cor-secundaria-escuro);
+}
+
+main .produtos table td[colspan="2"]
+{
+    color: var(--cor-preto);
+}
+
+/* Lista */
+
+main .lista h1
+{
+    color: var(--cor-preto);
+    text-align: center;
+}
+main .lista table
+{
+    border: var(--cor-preto) solid thin;
+    margin: 10px auto;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+main .lista table td,
+main .lista table th
+{
+    color: var(--cor-preto);
+    border: var(--cor-preto) solid thin;
+    padding: 5px;
+}
+
+main .lista table th
+{
+    color: var(--cor-branco);
+    background-color: var(--cor-principal-escuro);
+}
+
+main .lista table td img
+{
+    width: 30%;
+}
+
+main .lista table tr td a #btnalterar
+{
+    border: none;
+    background: none;
+    color: var(--cor-principal);
+}
+
+main .lista table tr td a #btnalterar:hover
+{
+    cursor: pointer;
+    color: var(--cor-principal-escuro);
+    text-decoration: underline;
+}
+
+main .lista table tr td a #btnexcluir
+{
+    border: none;
+    background: none;
+    color: var(--cor-secundaria);
+}
+
+main .lista table tr td a #btnexcluir:hover
+{
+    cursor: pointer;
+    color: var(--cor-secundaria-escuro);
+    text-decoration: underline;
+}
+
+main #busca
+{
+    text-align: center;
+}
+
+/* Carrinho */
+
+main .carrinho-enviar
+{
+    text-align: center;
+}
+
+main .carrinho-enviar p
+{
+    color: var(--cor-preto);
+}
+
+main .carrinho-enviar a #finalizarcompra
+{
+    color: var(--cor-branco);
+    background-color: var(--cor-secundaria);
+    width: 30%;
+    margin: 60px 0 20px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+}
+main .carrinho-enviar a #finalizarcompra:hover
+{
+    cursor: pointer;
+    background-color: var(--cor-secundaria-escuro);
+}
+
+/* Botões de Confirmação */
+
+#btnSim
+{
+    color: var(--cor-branco);
+    background-color: var(--cor-principal);
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    width: 10%;
+    margin: 10px;
+}
+
+#btnSim:hover
+{
+    cursor: pointer;
+    background-color: var(--cor-principal-escuro);
+}
+
+#btnNao
+{
+    color: var(--cor-branco);
+    background-color: var(--cor-secundaria);
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    width: 10%;
+    margin: 10px;
+}
+
+#btnNao:hover
+{
+    cursor: pointer;
+    background-color: var(--cor-secundaria-escuro);
+}
+
+#msg_erro
+{
+    color: red;
+    margin: 20px 0;
+}
+
+/* Usuario */
+
+main .dados_pessoais h1,
+main .tema_pessoal h1
+{
+    color: var(--cor-principal);
+    margin: 20px 0 20px 30px;
+}
+
+main .dados_pessoais,
+main .tema_pessoal
+{
+    text-align: center;
+}
+main .dados_pessoais p label,
+main .tema_pessoal p label
+{
+    margin-left: 30px;
+    font-weight: bolder;
+    color: var(--cor-principal);
+}
+
+main .dados_pessoais p input,
+main .tema_pessoal select
+{
+    margin: 10px 0;
+    border: var(--cor-principal) solid 3px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+main .dados_pessoais a #alterarinfo
+{
+    color: var(--cor-branco);
+    background-color: var(--cor-principal);
+    width: 30%;
+    margin: 60px 0 20px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+}
+
+main .dados_pessoais a #alterarinfo:hover
+{
+    cursor: pointer;
+    background-color: var(--cor-principal-escuro);
+}
+
+main .pedidos_pessoais
+{
+    margin-top: 20px;
+}
+
+main .pedidos_pessoais h1
+{
+    text-align: center;
+    color: var(--cor-principal);
+}
+
+main .pedidos_pessoais p
+{
+    margin-top: 20px;
+    text-align: center;
+    color: var(--cor-cinza);
+    font-style: italic;
+}
+
+main .pedidos_pessoais table
+{
+    border: var(--cor-preto) solid thin;
+    margin: 10px auto;
+    text-align: center;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+main .pedidos_pessoais table td,
+main .pedidos_pessoais table th
+{
+    color: var(--cor-preto);
+    border: var(--cor-preto) solid thin;
+    padding: 5px;
+}
+
+main .pedidos_pessoais table th
+{
+    color: var(--cor-branco);
+    background-color: var(--cor-principal-escuro);
+}
+
+main .pedidos_pessoais table tr td a #btnexcluir
+{
+    border: none;
+    background: none;
+    color: var(--cor-secundaria);
+}
+
+main .pedidos_pessoais table tr td a #btnexcluir:hover
+{
+    cursor: pointer;
+    color: var(--cor-secundaria-escuro);
+    text-decoration: underline;
+}
